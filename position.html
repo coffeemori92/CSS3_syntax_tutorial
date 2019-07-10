@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>CSS Position</title>
+        <style>
+            .container {
+                border: 3px solid red;
+                width: 100%;
+                height: 1000px;
+                position: relative;
+            }
+            .position {
+                width: 150px;
+                height: 50px;
+                top: 100px;
+                left: 120px;
+            }
+            .static {
+                border: 3px solid black;
+                position: static;
+            }
+            .relative {
+                border: 3px solid green;
+                position: relative;
+            }
+            .fixed {
+                border: 3px solid orange;
+                position: fixed;
+            }
+            .absolute {
+                border: 3px solid blue;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>정적위치 지정방식의 특징</h1>
+        <div class = "container">
+            <div class = "static position">static</div>
+            <div class = "relative position">relative</div>
+            <div class = "fixed position">fixed</div>
+            <div class = "absolute position">absolute</div>
+        </div>
+    </body>
+</html>

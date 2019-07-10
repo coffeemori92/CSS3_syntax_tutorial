@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>CSS Position</title>
+        <style>
+            div.relative {
+                border: 2px solid #b8860b;
+                width: 500px;
+                height: 200px;
+                position: relative;
+            }
+            div.absolute {
+                border: 2px solid #006400;
+                width: 200px;
+                height: 100px;
+                position: absolute;
+                top: 50px;
+                right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>절대 위치 지정방식</h1>
+        <div class = "relative">상대위치
+            <div class = "absolute">절대위치, top 50px</div>
+        </div>
+        <div class = "absolute">절대위치, top 50px</div>
+        <p>절대위치는 해당요소의 바로 상위의 위치가 설정된 조상요소에 따라 위치를 재조정</p>
+    </body>
+</html>

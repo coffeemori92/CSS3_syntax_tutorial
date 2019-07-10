@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>CSS Dropdown</title>
+        <style>
+            .d-btn {
+                background-color: #ffdab9;
+                padding: 8px;
+                font-size: 15px;
+                border: none;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .d-content {
+                display: none;
+                position: absolute;
+                background-color: #ffdab9;
+                min-width: 75px;
+                padding: 5px;
+                box-shadow: 0px 8px 16px 0px white;
+            }
+            .d-content a {
+                color: black;
+                padding: 8px;
+                text-decoration: none;
+                display: block;
+            }
+            .d-content a:hover {background-color: #cd853f}
+            .dropdown:hover .d-content {display: block}
+            .dropdown:hover .d-btn {background-color: #cd853f;}
+        </style>
+    </head>
+    <body>
+        <h1>Drop down</h1>
+        <div class = "dropdown">
+            <button class = "d-btn">Dropdown</button>
+            <div class = "d-content">
+                <a href = "#">HTML</a>
+                <a href = "#">CSS</a>
+                <a href = "#">JavaScript</a>
+            </div>
+        </div>
+    </body>
+</html>
