@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>transition</title>
+        <style>
+            #windmill {
+                background-color: orange;
+                height: 100px;
+                width: 100px;
+                margin: 10px;
+                transition: width 2s, height 2s, transform 2s;
+            }
+            #windmill:hover {
+                width: 300px;
+                height: 300px;
+                transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>전환효과와 변환효과</h1>
+        <div id = "windmill">윈드밀</div>
+        <p>div박스 위에 마우스를 올려보자</p>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>transition</title>
+        <style>
+            #resize {
+                background-color: orange;
+                height: 100px;
+                width: 150px;
+                margin: 10px;
+                transition: width 1s, height 2s;
+                transition-delay: 1s;
+            }
+            #resize:hover {
+                width: 300px;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>요소의 크기변화</h1>
+        <div id = "resize">1초가 지나야 작동</div>
+        <p>div박스 위에 마우스를 올려보자</p>
+    </body>
+</html>
