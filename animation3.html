@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Animation</title>
+        <style>
+            p {
+                height: 40px;
+                width: 400px;
+                position: relative;
+                border: 5px solid red;
+                animation-name: movingPara;
+                animation-duration: 4s;
+                animation-delay: 2s;
+            }
+            @keyframes movingPara {
+                0% {border-color: red; transform: rotateY(0deg)}
+                20% {border-color: orange}
+                40% {border-color: yellow}
+                50% {border-color: green; transform: rotateY(180deg)}
+                60% {border-color: blue}
+                80% {border-color: navy}
+                100% {border-color: purple; transform: rotateY(360deg)}
+            }
+        </style>
+    </head>
+    <body>
+        <h1>@keyframes 규칙을 이용한 애니메이션 효과</h1>
+        <p>다양한 애니메이션 효과를 줄 수 있다.</p>
+    </body>
+</html>
